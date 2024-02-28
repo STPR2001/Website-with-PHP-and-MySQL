@@ -1,0 +1,165 @@
+:root {
+    --primary: #1e1f24;
+    --secondary: #434653;
+    --third: #3a3a3f;
+    --accent: #5bffc0;
+    --red: #4e3333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    padding: 7px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background-color: var(--secondary);
+}
+
+.btn:hover {
+    transition: 300ms;
+    border: 1px solid white;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--primary);
+    color: #eee;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+body::-webkit-scrollbar:horizontal {
+    height: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 2px;
+    border: none;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 1px;
+    background-color: var(--secondary);
+}
+
+section {
+    padding: 4rem 10rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    padding: 15px 0;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+#submit {
+    cursor: pointer;
+}
+
+footer {
+    left: 0;
+    gap: 10px;
+    bottom: 0;
+    opacity: .3;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    position: fixed;
+    padding: 1rem 2rem;
+}
+
+.pageSquare, .activePageSquare {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--third);
+}
+
+.activePageSquare {
+    border: 2px solid var(--accent);
+}
+
+.pagesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.pagesContainer>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid var(--secondary);
+    padding: 8px;
+    text-align: left;
+}
+
+tr {
+    text-transform: capitalize;
+}
+
+@media (max-width: 680px) {
+    section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+

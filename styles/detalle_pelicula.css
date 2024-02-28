@@ -1,0 +1,68 @@
+section>div>h1:nth-child(1) {
+    opacity: .5;
+}
+
+button, a {
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    padding: 7px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    background-color: var(--secondary);
+}
+
+button:hover, a:hover {
+    transition: 300ms;
+    border: 1px solid white;
+}
+
+.actors-container {
+    gap: 5px;
+    padding: 1rem;
+    display: flex;
+    width: fit-content;
+    border-radius: 10px;
+    flex-direction: column;
+    border: 1px solid var(--secondary);
+}
+
+.actors-container h4 {
+    margin: 0;
+    font-size: 25px;
+    color: var(--accent);
+}
+    
+.actors-container span {
+    text-transform: capitalize;
+}
+
+section>div {
+    gap: 20px;
+    display: flex;
+}
+
+section>span {
+    opacity: .5;
+}
+
+#red-btn {
+    margin-right: 5px;
+    background-color: var(--red);
+}
+
+@media (max-width: 680px) {
+    .actors-container {
+        gap: 0; 
+        width: 100%;
+    }
+
+    section>div {
+        flex-direction: column;
+    }
+
+    a {
+        line-height: 40px;
+    }
+}

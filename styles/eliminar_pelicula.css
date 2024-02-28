@@ -1,0 +1,7 @@
+section h1:nth-child(1) {
+    color: var(--accent);
+}
+
+section h1:nth-child(2) {
+    text-transform: lowercase;
+}
